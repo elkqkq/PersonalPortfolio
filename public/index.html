@@ -1,0 +1,278 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Abdinasir-Developer-Portfolio</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+        }
+        @media (max-width: 768px) {
+        #mobileMenu.hidden {
+            display: none;
+        }
+        #mobileMenu.block {
+            display: block;
+        }
+    }
+    .projects-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.projects-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+    
+    </style>
+</head>
+<body>
+    
+    
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 p-4 text-white z-10 w-full fixed top-0">
+        <div class="container flex justify-between items-center">
+            <div class="text-2xl font-bold font-sans">
+                <h1>KAKA <b>^.</b></h1>
+            </div>
+    
+            <!-- Hamburger Menu (hidden on larger screens) -->
+            <div class="md:hidden">
+                <button id="menuBtn" class="text-white focus:outline-none" onclick="toggleMobileMenu()">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+    
+            <!-- Navigation Links (hidden on smaller screens) -->
+            <ul class="hidden md:flex space-x-36">
+                <li><a href="#about" class="hover:text-gray-300">About</a></li>
+                <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
+                <li><a href="#services" class="hover:text-gray-300">Services</a></li>
+                <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </div>
+    
+        <!-- Mobile Menu (shown on smaller screens) -->
+        <div id="mobileMenu" class="md:hidden hidden">
+            <ul class="flex flex-col space-y-2">
+                <li><a href="#about" class="text-white hover:text-gray-300">About</a></li>
+                <li><a href="#projects" class="text-white hover:text-gray-300">Projects</a></li>
+                <li><a href="#services" class="text-white hover:text-gray-300">Services</a></li>
+                <li><a href="#contact" class="text-white hover:text-gray-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Image Section -->
+    <section class="relative">
+        <img src="./pic3.jpg" alt="" class="w-full max-h-200 object-cover object-center mt-30">
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+            <p class="text-lg font-bold">Hi there, I am a</p>
+            <p class="text-3xl font-extrabold tracking-tight text-white">Web Designer - UI/UX Designer</p>
+            <p class="text-lg font-bold">My name is Abdinasir Abdi</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+    <div class="flex mt-5 bg-red-50">
+        <div class="w-1/2 h-50">
+          <img src="./pic.jpg">
+        </div>
+        <div class="w-1/2 ml-9">
+          <h1 class="text-4xl decoration-sky-950 font-bold mt-72">About Me</h1>
+          <p>
+            I am a passionate and results-driven software engineer with over 2 years of hands-on experience in developing robust and efficient solutions. My expertise lies in crafting clean and maintainable code, solving complex problems, and delivering high-quality software products. I thrive in collaborative environments, leveraging my strong communication skills to work seamlessly with cross-functional teams. Dedicated to continuous learning, I stay abreast of industry trends and emerging technologies to ensure my contributions are innovative and future-proof.
+         </p>
+         
+        </div>
+      
+      </div>
+    </section>
+    
+     <!-- Projects Section -->
+     <section id="projects" class="container mx-auto mt-8 p-8 bg-white rounded shadow projects-section">
+         <h2 class="text-2xl font-bold mb-4 text-center">Projects</h2>
+        <!-- Add your projects here -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-200 p-4 rounded shadow">
+                <h3 class="text-lg font-semibold"><b>Online Portfolio Website:</b></h3>
+                <p><b>Description:</b> Developed a responsive and visually appealing online portfolio showcasing my skills, projects, and experiences using HTML, CSS, and JavaScript. Integrated a clean and intuitive design for easy navigation.</p>
+            </div>
+            <div class="bg-gray-200 p-4 rounded shadow">
+                <h3 class="text-lg font-semibold"><b>E-Commerce Website with Payment Integration:</b></h3>
+                <p<b>Description:</b>Designed and implemented a full-fledged e-commerce website with features such as product listings, user authentication, and secure payment processing using React, Node.js, and Stripe API..</p>
+            </div>
+            <div class="bg-gray-200 p-4 rounded shadow">
+                <h3 class="text-lg font-semibold"><b>Fitness Tracker App:</b></h3>
+                <p><b>Description:</b>Created a fitness tracker application allowing users to log workouts, set goals, and track progress. Implemented features like exercise categorization and progress visualization using the MERN stack..</p>
+            </div>
+            <div class="bg-gray-200 p-4 rounded shadow">
+                <h3 class="text-lg font-semibold"><b>Blog Platform with User Authentication:</b></h3>
+                <p><b>Description:</b>Designed and implemented a feature-rich blog platform where users can create, edit, and delete blog posts. Integrated user authentication for a personalized experience using the MERN stack..</p>
+            </div>
+            <div class="bg-gray-200 p-4 rounded shadow">
+                <h3 class="text-lg font-semibold"><b>Expense Tracker:</b></h3>
+                <p><b>Description:</b> Developed a robust expense tracking application to help users manage their finances effectively. Leveraged React for the frontend, Node.js for the backend, and integrated a database for efficient data storage..</p>
+            </div>
+            <div class="bg-gray-200 p-4 rounded shadow">
+                <h3 class="text-lg font-semibold"><b>Real-Time Chat Application:</b></h3>
+                <p><b>Description:</b> Engineered a real-time chat application enabling users to engage in private or group conversations. Utilized Socket.io for seamless communication and React for the dynamic frontend..</p>
+            </div>            
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container mx-auto mt-8 p-8 bg-white rounded">
+    <h2 class="text-2xl font-bold mb-4 text-center">Services</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
+            <img src="./web development.jpg" alt="Service 1" class="w-full h-40 object-cover object-center mb-4">
+            <h3 class="text-lg font-bold mb-2">Web Development</h3>
+            <p class="text-gray-700">Create responsive and user-friendly websites tailored to your needs.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
+            <img src="./mobile dev.jpeg" alt="Service 2" class="w-full h-40 object-cover object-center mb-4">
+            <h3 class="text-lg font-bold mb-2">Mobile App Development</h3>
+            <p class="text-gray-700">Build cross-platform mobile applications for iOS and Android platforms.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
+            <img src="./database.jpeg" alt="Service 3" class="w-full h-40 object-cover object-center mb-4">
+            <h3 class="text-lg font-bold mb-2">Database Design</h3>
+            <p class="text-gray-700">Design efficient and scalable database architectures for your applications.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
+            <img src="./api.jpg" alt="Service 4" class="w-full h-40 object-cover object-center mb-4">
+            <h3 class="text-lg font-bold mb-2">API Development</h3>
+            <p class="text-gray-700">Create robust and secure APIs to enable seamless communication between applications.</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
+            <img src="./code.jpg" alt="Service 5" class="w-full h-40 object-cover object-center mb-4">
+            <h3 class="text-lg font-bold mb-2">Code Review and Optimization</h3>
+            <p class="text-gray-700">Review and optimize existing codebases for improved performance and maintainability.</p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
+            <img src="./iu.jpg" alt="Service 5" class="w-full h-40 object-cover object-center mb-4">
+            <h3 class="text-lg font-bold mb-2">UI/UX Design</h3>
+            <p class="text-gray-700">Conducting extensive user research, create user personas, design wireframes, build prototypes, and carry out user testing to ensure the final product delivers an exceptional customer experience.</p>
+        </div>
+        
+        <!-- Service 7 -->
+        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
+            <img src="./automation.jpg" alt="Service 5" class="w-full h-40 object-cover object-center mb-4">
+            <h3 class="text-lg font-bold mb-2">Automation</h3>
+            <p class="text-gray-700"> Implement automated UI testing solutions to ensure the functionality, performance, and responsiveness of web applications across various browsers and devices. Utilize testing frameworks such as Selenium or Cypress to create robust test suites that simulate user interactions and detect issues early in the development process.</p>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
+            <img src="./tech.jpg" alt="Service 5" class="w-full h-40 object-cover object-center mb-4">
+            <h3 class="text-lg font-bold mb-2">Technical Support</h3>
+            <p class="text-gray-700">Provides technical telephone support for internal end users on routine hardware and software problems including operating system support, application support, system access problems and database support. Troubleshoots and diagnoses basic problems with computer equipment.</p>
+        </div>
+
+        <!-- Service 9 -->
+        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
+            <img src="./security.jpg" alt="Service 5" class="w-full h-40 object-cover object-center mb-4">
+            <h3 class="text-lg font-bold mb-2">Security Analysis</h3>
+            <p class="text-gray-700">Protecting networks, servers, and computer systems from damage to or the theft of software, hardware, or data.</p>
+        </div>
+        
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto mt-8 p-8 bg-white">
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                <h2 class="mb-4 text-2xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Me</h2>
+                <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+                <form action="#" class="space-y-8">
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@gmail.com" required>
+                    </div>
+                    <div>
+                        <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                        <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                        <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                    </div>
+                    <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+                </form>
+            </div>
+    </section>
+    
+
+    <footer class="bg-gray-800 text-white text-center py-4 mt-10">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- About Me Section -->
+        <div>
+            <h3 class="text-lg font-semibold mb-2 ">About Me</h3>
+            <p>I am a passionate and results-driven software engineer with over 2 years of hands-on experience in developing robust and efficient solutions.</p>
+        </div>
+        
+        <!-- Social Media Section -->
+        <div class="text-center">
+            <h3 class="text-lg font-semibold mb-2">Social Media</h3>
+            <div class="flex justify-center space-x-4">
+                <a href="#" target="_blank" class="text-white hover:text-gray-300">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" target="_blank" class="text-white hover:text-gray-300">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" class="text-white hover:text-gray-300">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank" class="text-white hover:text-gray-300">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" target="_blank" class="text-white hover:text-gray-300">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Contact Section -->
+        <div>
+            <h3 class="text-lg font-semibold mb-2">Contact</h3>
+            <p>Email: samiradynassir@gmail.com</p>
+            <p>Phone: +254729935458</p>
+            <p>Westlands, Nirobi, Kenya</p>
+        </div>
+    </div>
+    <div class="container mx-auto pt-4">
+        <div class="border-t-2 border-gray-700"></div>
+        <div class="text-center text-sm mt-4">
+            &copy; 2023 ABDINASIR. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+    <script src="./app.js"></script>
+
+
+</body>
+</html>

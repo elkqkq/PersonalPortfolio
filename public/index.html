@@ -5,11 +5,16 @@
     <link rel="stylesheet" href="output.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
     <title>Abdinasir-Developer-Portfolio</title>
     <style>
         *{
            margin: 0;
            padding: 0;
+           
+        }
+        body{
+            background-color:lightcyan;
         }
         @media (max-width: 768px) {
         #mobileMenu.hidden {
@@ -19,22 +24,11 @@
             display: block;
         }
     }
-    .projects-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.projects-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
     
     </style>
 </head>
 <body>
-    
-    
+       
     <!-- Navigation Bar -->
     <nav class="bg-gray-800 p-4 text-white z-10 w-full fixed top-0">
         <div class="container flex justify-between items-center">
@@ -72,14 +66,24 @@
     </nav>
     
     <!-- Image Section -->
-    <section class="relative">
+    <!-- <section class="relative">
         <img src="./pic3.jpg" alt="" class="w-full max-h-200 object-cover object-center mt-30">
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
             <p class="text-lg font-bold">Hi there, I am a</p>
             <p class="text-3xl font-extrabold tracking-tight text-white">Web Designer - UI/UX Designer</p>
             <p class="text-lg font-bold">My name is Abdinasir Abdi</p>
         </div>
+    </section> -->
+    <section class="relative">
+        <img src="./pic3.jpg" alt="" class="w-full max-h-200 object-cover object-center mt-30">
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+            <p class="text-lg font-bold">Hi there, I am a</p>
+            <p class="text-3xl font-extrabold tracking-tight text-white">Web Designer - UI/UX Designer</p>
+            <p class="text-lg font-bold">My name is Abdinasir Abdi</p>
+            <button class="bg-blue-300 text-white px-8 py-4 mt-4 rounded-md hover:bg-blue-600 focus:outline-none">Hire Me</button>
+        </div>
     </section>
+    
 
     <!-- About Me Section -->
     <section id="about">
@@ -92,6 +96,14 @@
           <p>
             I am a passionate and results-driven software engineer with over 2 years of hands-on experience in developing robust and efficient solutions. My expertise lies in crafting clean and maintainable code, solving complex problems, and delivering high-quality software products. I thrive in collaborative environments, leveraging my strong communication skills to work seamlessly with cross-functional teams. Dedicated to continuous learning, I stay abreast of industry trends and emerging technologies to ensure my contributions are innovative and future-proof.
          </p>
+         <div class="mt-4">
+            <a href="link-to-your-resume" class="inline-flex items-center px-6 py-3 text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none">
+                View My CV/Resume
+                <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M2 0a2 2 0 00-2 2v16a2 2 0 002 2h16a2 2 0 002-2V2a2 2 0 00-2-2H2zm15 18H3V2h2v7h10V2h2v16zM5 11a1 1 0 100-2 1 1 0 000 2zm1 3a1 1 0 100-2 1 1 0 000 2zm8-3a1 1 0 100-2 1 1 0 000 2zm1 3a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
          
         </div>
       
@@ -131,74 +143,56 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="container mx-auto mt-8 p-8 bg-white rounded">
-    <h2 class="text-2xl font-bold mb-4 text-center">Services</h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Service 1 -->
-        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
-            <img src="./web development.jpg" alt="Service 1" class="w-full h-40 object-cover object-center mb-4">
-            <h3 class="text-lg font-bold mb-2">Web Development</h3>
-            <p class="text-gray-700">Create responsive and user-friendly websites tailored to your needs.</p>
+    <!-- <section id="services" class="container mx-auto mt-8 p-8 bg-white rounded"> -->
+    <section class="max-w-7xl mx-auto px-5 my-12" id="services">
+    <div class="text-center">
+    <h2 class="text-2xl font-bold mb-4 text-center">Services-Tech Stack</h2>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
+        <!-- Technology Card -->
+        <div class=" rounded-lg p-6 shadow-md flex flex-col items-center justify-center">
+            <img src="./icons8-html-100.png" alt="" style="cursor: pointer;">
+            <h4 class="text-lg font-bold text-black">HTML5</h4>
+        </div>
+        <!-- Technology Card -->
+        <div class=" rounded-lg p-6 shadow-md flex flex-col items-center justify-center">
+            <img src="./icons8-css-100.png" alt=""  style="cursor: pointer;">
+            <h4 class="text-lg font-bold text-black">CSS3</h4>
+        </div>
+        <!-- Technology Card -->
+        <div class=" rounded-lg p-6 shadow-md flex flex-col items-center justify-center">
+           <img src="./icons8-javascript-100.png" alt=""  style="cursor: pointer;">
+            <h4 class="text-lg font-bold text-black">JavaScript</h4>
+        </div>
+        <!-- Technology Card -->
+        <div class=" rounded-lg p-6 shadow-md flex flex-col items-center justify-center">
+            <img src="./icons8-react-100.png" alt=""  style="cursor: pointer;">
+            <h4 class="text-lg font-bold text-black">React</h4>
+        </div>
+         <!-- Technology Card -->
+         <div class=" rounded-lg p-6 shadow-md flex flex-col items-center justify-center">
+           <img src="./icons8-database-100.png" alt=""  style="cursor: pointer;">
+            <h4 class="text-lg font-bold text-black">Database</h4>
+        </div>
+        <!-- Technology Card -->
+        <div class=" rounded-lg p-6 shadow-md flex flex-col items-center justify-center">
+           <img src="./icons8-bootstrap-100.png" alt=""  style="cursor: pointer;">
+            <h4 class="text-lg font-bold text-black">Boostrap</h4>
+        </div>
+        <!-- Technology Card -->
+        <div class=" rounded-lg p-6 shadow-md flex flex-col items-center justify-center">
+            <img src="./icons8-tailwindcss-100.png" alt=""  style="cursor: pointer;">
+            <h4 class="text-lg font-bold text-black">Tailwind CSS</h4>
+        </div>
+         <!-- Technology Card -->
+         <div class=" rounded-lg p-6 shadow-md flex flex-col items-center justify-center">
+            <img src="./icons8-git-100.png" alt=""  style="cursor: pointer;">
+            <h4 class="text-lg font-bold text-black">Git-Hub</h4>
         </div>
 
-        <!-- Service 2 -->
-        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
-            <img src="./mobile dev.jpeg" alt="Service 2" class="w-full h-40 object-cover object-center mb-4">
-            <h3 class="text-lg font-bold mb-2">Mobile App Development</h3>
-            <p class="text-gray-700">Build cross-platform mobile applications for iOS and Android platforms.</p>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
-            <img src="./database.jpeg" alt="Service 3" class="w-full h-40 object-cover object-center mb-4">
-            <h3 class="text-lg font-bold mb-2">Database Design</h3>
-            <p class="text-gray-700">Design efficient and scalable database architectures for your applications.</p>
-        </div>
-
-        <!-- Service 4 -->
-        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
-            <img src="./api.jpg" alt="Service 4" class="w-full h-40 object-cover object-center mb-4">
-            <h3 class="text-lg font-bold mb-2">API Development</h3>
-            <p class="text-gray-700">Create robust and secure APIs to enable seamless communication between applications.</p>
-        </div>
-
-        <!-- Service 5 -->
-        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
-            <img src="./code.jpg" alt="Service 5" class="w-full h-40 object-cover object-center mb-4">
-            <h3 class="text-lg font-bold mb-2">Code Review and Optimization</h3>
-            <p class="text-gray-700">Review and optimize existing codebases for improved performance and maintainability.</p>
-        </div>
-
-        <!-- Service 6 -->
-        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
-            <img src="./iu.jpg" alt="Service 5" class="w-full h-40 object-cover object-center mb-4">
-            <h3 class="text-lg font-bold mb-2">UI/UX Design</h3>
-            <p class="text-gray-700">Conducting extensive user research, create user personas, design wireframes, build prototypes, and carry out user testing to ensure the final product delivers an exceptional customer experience.</p>
-        </div>
-        
-        <!-- Service 7 -->
-        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
-            <img src="./automation.jpg" alt="Service 5" class="w-full h-40 object-cover object-center mb-4">
-            <h3 class="text-lg font-bold mb-2">Automation</h3>
-            <p class="text-gray-700"> Implement automated UI testing solutions to ensure the functionality, performance, and responsiveness of web applications across various browsers and devices. Utilize testing frameworks such as Selenium or Cypress to create robust test suites that simulate user interactions and detect issues early in the development process.</p>
-        </div>
-
-        <!-- Service 8 -->
-        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
-            <img src="./tech.jpg" alt="Service 5" class="w-full h-40 object-cover object-center mb-4">
-            <h3 class="text-lg font-bold mb-2">Technical Support</h3>
-            <p class="text-gray-700">Provides technical telephone support for internal end users on routine hardware and software problems including operating system support, application support, system access problems and database support. Troubleshoots and diagnoses basic problems with computer equipment.</p>
-        </div>
-
-        <!-- Service 9 -->
-        <div class="mb-8 bg-gray-200 p-4 rounded shadow">
-            <img src="./security.jpg" alt="Service 5" class="w-full h-40 object-cover object-center mb-4">
-            <h3 class="text-lg font-bold mb-2">Security Analysis</h3>
-            <p class="text-gray-700">Protecting networks, servers, and computer systems from damage to or the theft of software, hardware, or data.</p>
-        </div>
         
     </div>
+
     </section>
 
     <!-- Contact Section -->
@@ -219,7 +213,10 @@
                         <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
                         <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
                     </div>
-                    <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+                    <button type="submit" class="py-3 px-5 text-sm font-medium text-white text-center rounded-lg bg-blue-700 shadow-md hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 focus:outline-none">
+                        Send Message
+                    </button>
+                    
                 </form>
             </div>
     </section>

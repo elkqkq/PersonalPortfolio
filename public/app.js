@@ -16,3 +16,17 @@ function showMoreProjects() {
     showMoreButton.textContent = showMoreButton.textContent === "Show more" ? "Show less" : "Show more";
 }
 
+// Show more services
+function showMoreServices() {
+  const hiddenServices = document.querySelectorAll('.hidden-service');
+
+  hiddenServices.forEach(service => {
+      service.classList.toggle('hidden');
+  });
+
+  const showMoreButton = document.getElementById('showMoreButton');
+  showMoreButton.textContent = (showMoreButton.textContent === 'Show more') ? 'Show less' : 'Show more';
+}
+
+
+

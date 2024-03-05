@@ -23,6 +23,9 @@
         #mobileMenu.block {
             display: block;
         }
+        .hidden-service {
+        display: none;
+    }
     }
     
     </style>
@@ -50,6 +53,7 @@
                 <li><a href="#about" class="hover:text-gray-300">About</a></li>
                 <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
                 <li><a href="#services" class="hover:text-gray-300">Services</a></li>
+                <li><a href="#Tech" class="hover:text-gray-300">Tech</a></li>
                 <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
             </ul>
         </div>
@@ -60,20 +64,12 @@
                 <li><a href="#about" class="text-white hover:text-gray-300">About</a></li>
                 <li><a href="#projects" class="text-white hover:text-gray-300">Projects</a></li>
                 <li><a href="#services" class="text-white hover:text-gray-300">Services</a></li>
+                <li><a href="#Tech" class="hover:text-gray-300">Tech</a></li>
                 <li><a href="#contact" class="text-white hover:text-gray-300">Contact</a></li>
             </ul>
         </div>
     </nav>
     
-    <!-- Image Section -->
-    <!-- <section class="relative">
-        <img src="./pic3.jpg" alt="" class="w-full max-h-200 object-cover object-center mt-30">
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-            <p class="text-lg font-bold">Hi there, I am a</p>
-            <p class="text-3xl font-extrabold tracking-tight text-white">Web Designer - UI/UX Designer</p>
-            <p class="text-lg font-bold">My name is Abdinasir Abdi</p>
-        </div>
-    </section> -->
     <section class="relative">
         <img src="./pic3.jpg" alt="" class="w-full max-h-200 object-cover object-center mt-30">
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
@@ -111,43 +107,142 @@
     </section>
     
      <!-- Projects Section -->
-     <section  class="container mx-auto mt-8 p-8 bg-white rounded shadow projects-section" id="projects">
-         <h2 class="text-2xl font-bold mb-4 text-center">Projects</h2>
-        <!-- Add your projects here -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-gray-200 p-4 rounded shadow">
-                <h3 class="text-lg font-semibold"><b>Online Portfolio Website:</b></h3>
-                <p><b>Description:</b> Developed a responsive and visually appealing online portfolio showcasing my skills, projects, and experiences using HTML, CSS, and JavaScript. Integrated a clean and intuitive design for easy navigation.</p>
-            </div>
-            <div class="bg-gray-200 p-4 rounded shadow">
-                <h3 class="text-lg font-semibold"><b>E-Commerce Website with Payment Integration:</b></h3>
-                <p<b>Description:</b>Designed and implemented a full-fledged e-commerce website with features such as product listings, user authentication, and secure payment processing using React, Node.js, and Stripe API..</p>
-            </div>
-            <div class="bg-gray-200 p-4 rounded shadow">
-                <h3 class="text-lg font-semibold"><b>Fitness Tracker App:</b></h3>
-                <p><b>Description:</b>Created a fitness tracker application allowing users to log workouts, set goals, and track progress. Implemented features like exercise categorization and progress visualization using the MERN stack..</p>
-            </div>
-            <div class="bg-gray-200 p-4 rounded shadow">
-                <h3 class="text-lg font-semibold"><b>Blog Platform with User Authentication:</b></h3>
-                <p><b>Description:</b>Designed and implemented a feature-rich blog platform where users can create, edit, and delete blog posts. Integrated user authentication for a personalized experience using the MERN stack..</p>
-            </div>
-            <div class="bg-gray-200 p-4 rounded shadow">
-                <h3 class="text-lg font-semibold"><b>Expense Tracker:</b></h3>
-                <p><b>Description:</b> Developed a robust expense tracking application to help users manage their finances effectively. Leveraged React for the frontend, Node.js for the backend, and integrated a database for efficient data storage..</p>
-            </div>
-            <div class="bg-gray-200 p-4 rounded shadow">
-                <h3 class="text-lg font-semibold"><b>Real-Time Chat Application:</b></h3>
-                <p><b>Description:</b> Engineered a real-time chat application enabling users to engage in private or group conversations. Utilized Socket.io for seamless communication and React for the dynamic frontend..</p>
-            </div>            
+        <section class="container mx-auto mt-8 p-8 bg-white rounded shadow" id="projects">
+            <div class="max-w-7xl mx-auto text-center">
+                <h3 class="text-3xl font-bold mb-5 mt-8 text-black">Recent <span class="text-blue-400">Projects</span></h3>
+                <p class="text-xl font-bold mb-5 text-black">Here are some of my recent projects</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <a href="#" class="block group project-card relative overflow-hidden">
+        <div class="relative">
+                <video src="./oraimo.mp4" autoplay muted height="600px" width="600px"></video>
+                <div class="absolute inset-0 bg-black opacity-0 transition duration-300 project-overlay"></div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h4 class="project-title text-white">Oraimo Project</h4>
+                </div>
         </div>
-        <button id="showMoreButton" onclick="showMoreProjects()" class="mt-4 mx-auto block px-4 py-2 bg-blue-600 text-white rounded-md shadow-md focus:outline-none">Show more</button>
+            <p class="text-black font-semibold mt-2 mb-4">A Project that I collaborated with the Oraimo Company</p>
+            <button class="bg-blue-500 text-black px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300">Watch Demo</button>
+        </a>
+        <!-- Project Card 2 -->
+        <a href="#" class="block group project-card relative overflow-hidden">
+            <div class="relative">
+                <video src="./car.mp4" autoplay muted height="600px" width="600px"></video>
+                <div class="absolute inset-0 bg-black opacity-0 transition duration-300 project-overlay"></div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h4 class="project-title text-white">Automotive Solutions Emporium</h4>
+                </div>
+            </div>
+            <p class="text-black font-semibold mt-2 mb-4">A Project that I worked on at Automotive Solutions Emporium.</p>
+            <button class="bg-blue-500 text-black px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300">Watch Demo</button>
+        </a>
+        <!-- Project Card 3 -->
+        <a href="#" class="block group project-card relative overflow-hidden">
+            <div class="relative">
+                <video src="./bakery.mp4" autoplay muted height="600px" width="600px"></video>
+                <div class="absolute inset-0 bg-black opacity-0 transition duration-300 project-overlay"></div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h4 class="project-title text-white">Bakery Project</h4>
+                </div>
+            </div>
+            <p class="text-black font-semibold mt-2 mb-4"> A Project that I worked on at Bakery</p>
+            <button class="bg-blue-500 text-black px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300">Watch Demo</button>
+        </a>
+        <!-- Project Card 4 -->
+        <a href="#" class="block group project-card relative overflow-hidden">
+            <div class="relative">
+                <video src="./blog.mp4" autoplay muted height="600px" width="600px"></video>
+                <div class="absolute inset-0 bg-black opacity-0 transition duration-300 project-overlay"></div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h4 class="project-title text-white">Blog Project</h4>
+                </div>
+            </div>
+            <p class="text-black font-semibold mt-2 mb-4"> My BloG project that i used React.js</p>
+            <button class="bg-blue-500 text-black px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300">Watch Demo</button>
+        </a>
+    </div>
+</div>
+
+            
+
     </section>
 
     <!-- Services Section -->
-    <!-- <section id="services" class="container mx-auto mt-8 p-8 bg-white rounded"> -->
-    <section class="max-w-7xl mx-auto px-5 my-12  bg-white rounded shadow" id="services">
+    <section class="container mx-auto mt-8 p-8 bg-white rounded shadow" id="services">
+        <h2 class="text-4xl font-bold mb-4 text-center">My Services</h2>
+        <div id="serviceContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service Cards will be added here -->
+            <div class="bg-gray-200 p-4 rounded shadow">
+        <h3 class="text-lg font-semibold">Web Development</h3>
+        <img src="./automation.jpg" alt="Web Development" class="w-full h-auto rounded-lg mb-4">
+        <p>Custom web application development tailored to your business needs.</p>
+    </div>
+    <div class="bg-gray-200 p-4 rounded shadow">
+        <h3 class="text-lg font-semibold">Mobile App Development</h3>
+        <img src="./mobile dev.jpeg" alt="" class="w-full h-auto rounded-lg mb-4">
+        <p>Design and development of native and cross-platform mobile applications.</p>
+    </div>
+    <div class="bg-gray-200 p-4 rounded shadow hidden-service">
+        <h3 class="text-lg font-semibold">UI/UX Design</h3>
+        <img src="./iu.jpg" alt="" class="w-full h-auto rounded-lg mb-4">
+        <p>User-centric design approach to create intuitive and engaging user interfaces.</p>
+    </div>
+    <div class="bg-gray-200 p-4 rounded shadow hidden-service">
+        <h3 class="text-lg font-semibold">Software Consulting</h3>
+        <img src="./consulting.jpg" alt="" class="w-full h-auto rounded-lg mb-4">
+        <p>Expert advice and guidance on software architecture, technology stack, and more.</p>
+    </div>
+    <div class="bg-gray-200 p-4 rounded shadow hidden-service">
+        <h3 class="text-lg font-semibold">Quality Assurance</h3>
+        <img src="./quality-assuarance.jpg" alt="" class="w-full h-auto rounded-lg mb-4">
+        <p>Comprehensive testing services to ensure the quality and reliability of your software.</p>
+    </div>
+    <div class="bg-gray-200 p-4 rounded shadow hidden-service">
+        <h3 class="text-lg font-semibold">Maintenance & Support</h3>
+        <img src="./maintenance.jpg" alt="" class="w-full h-auto rounded-lg mb-4">
+        <p>Ongoing maintenance, updates, and technical support for your software products.</p>
+    </div>
+    <div class="bg-gray-200 p-4 rounded shadow hidden-service">
+        <h3 class="text-lg font-semibold">Cloud Solutions</h3>
+        <img src="./cloud.jpg" alt="" class="w-full h-auto rounded-lg mb-4">
+        <p>Design, implementation, and management of cloud-based solutions for scalability and flexibility.</p>
+    </div>
+    <div class="bg-gray-200 p-4 rounded shadow hidden-service">
+        <h3 class="text-lg font-semibold">E-commerce Development</h3>
+        <img src="./ecomerce.jpg" alt="" class="w-full h-auto rounded-lg mb-4">
+        <p>Creation of fully functional e-commerce platforms with secure payment gateways and inventory management.</p>
+    </div>
+    <div class="bg-gray-200 p-4 rounded shadow hidden-service">
+        <h3 class="text-lg font-semibold">Blockchain Development</h3>
+        <img src="./block.jpg" alt="" class="w-full h-auto rounded-lg mb-4">
+        <p>Building decentralized applications (DApps) and smart contracts on blockchain platforms for transparency and security.</p>
+    </div>
+    <div class="bg-gray-200 p-4 rounded shadow hidden-service">
+        <h3 class="text-lg font-semibold">Data Analytics</h3>
+        <img src="./data.jpg" alt="" class="w-full h-auto rounded-lg mb-4">
+        <p>Utilization of data analytics tools and techniques to derive valuable insights for informed decision-making.</p>
+    </div>
+    <div class="bg-gray-200 p-4 rounded shadow hidden-service">
+        <h3 class="text-lg font-semibold">Cybersecurity Solutions</h3>
+        <img src="./security.jpg" alt="" class="w-full h-auto rounded-lg mb-4">
+        <p>Implementation of robust cybersecurity measures to protect your digital assets and sensitive information.</p>
+    </div>
+    <div class="bg-gray-200 p-4 rounded shadow hidden-service">
+        <h3 class="text-lg font-semibold">AI and Machine Learning</h3>
+        <img src="./ai.jpg" alt="" class="w-full h-auto rounded-lg mb-4">
+        <p>Integration of artificial intelligence and machine learning algorithms to automate processes and improve efficiency.</p>
+    </div>
+    </div>
+        <div id="showMoreButtonContainer" class="text-center">
+            <button id="showMoreButton" onclick="showMoreServices()" class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md shadow-md focus:outline-none">Show more</button>
+        </div>
+    </section>
+    
+
+    <!-- Tech StackSection -->
+    <section class="max-w-7xl mx-auto px-5 my-12  bg-white rounded shadow" id="Tech">
     <div class="text-center">
-    <h2 class="text-2xl font-bold mb-4 text-center">Services-Tech Stack</h2>
+    <h2 class="text-2xl font-bold mb-4 text-center">Tech Stack</h2>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
         <!-- Technology Card -->

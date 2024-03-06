@@ -73,38 +73,37 @@
     <section class="relative">
         <img src="./pic3.jpg" alt="" class="w-full max-h-200 object-cover object-center mt-30">
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-            <p class="text-lg font-bold">Hi there, I am a</p>
-            <p class="text-3xl font-extrabold tracking-tight text-white">Web Designer - UI/UX Designer</p>
-            <p class="text-lg font-bold">My name is Abdinasir Abdi</p>
+            <p class="text-3xl font-bold">Hi there, I am a</p>
+            <p class="text-7xl font-extrabold tracking-tight text-white">Web Designer</p>
+            <p class="text-3xl font-bold">My name is Abdinasir Abdi</p>
             <button class="bg-blue-300 text-white px-8 py-4 mt-4 rounded-md hover:bg-blue-600 focus:outline-none">Hire Me</button>
         </div>
     </section>
     
 
     <!-- About Me Section -->
-    <section id="about">
-    <div class="flex mt-5 bg-red-50">
-        <div class="w-1/2 h-50">
-          <img src="./pic.jpg">
+    <section id="about" class="max-w-7xl mx-auto px-5 my-6">
+        <div class="flex mt-5 bg-red-50">
+            <div class="w-1/2 h-50">
+                <img src="./pic.jpg" class="h-full w-full object-cover" alt="Picture">
+            </div>
+            <div class="w-1/2 ml-9 flex flex-col justify-center">
+                <h1 class="text-4xl decoration-sky-950 font-bold mt-4 md:mt-0">About Me</h1>
+                <p class="mt-4">
+                    I am a passionate and results-driven software engineer with over 2 years of hands-on experience in developing robust and efficient solutions. My expertise lies in crafting clean and maintainable code, solving complex problems, and delivering high-quality software products. I thrive in collaborative environments, leveraging my strong communication skills to work seamlessly with cross-functional teams. Dedicated to continuous learning, I stay abreast of industry trends and emerging technologies to ensure my contributions are innovative and future-proof.
+                </p>
+                <div class="mt-4">
+                    <a href="link-to-your-resume" class="inline-flex items-center px-6 py-3 text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none" target="_blank">
+                        View My CV/Resume
+                        <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M2 0a2 2 0 00-2 2v16a2 2 0 002 2h16a2 2 0 002-2V2a2 2 0 00-2-2H2zm15 18H3V2h2v7h10V2h2v16zM5 11a1 1 0 100-2 1 1 0 000 2zm1 3a1 1 0 100-2 1 1 0 000 2zm8-3a1 1 0 100-2 1 1 0 000 2zm1 3a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="w-1/2 ml-9">
-          <h1 class="text-4xl decoration-sky-950 font-bold mt-72">About Me</h1>
-          <p>
-            I am a passionate and results-driven software engineer with over 2 years of hands-on experience in developing robust and efficient solutions. My expertise lies in crafting clean and maintainable code, solving complex problems, and delivering high-quality software products. I thrive in collaborative environments, leveraging my strong communication skills to work seamlessly with cross-functional teams. Dedicated to continuous learning, I stay abreast of industry trends and emerging technologies to ensure my contributions are innovative and future-proof.
-         </p>
-         <div class="mt-4">
-            <a href="link-to-your-resume" class="inline-flex items-center px-6 py-3 text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none">
-                View My CV/Resume
-                <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M2 0a2 2 0 00-2 2v16a2 2 0 002 2h16a2 2 0 002-2V2a2 2 0 00-2-2H2zm15 18H3V2h2v7h10V2h2v16zM5 11a1 1 0 100-2 1 1 0 000 2zm1 3a1 1 0 100-2 1 1 0 000 2zm8-3a1 1 0 100-2 1 1 0 000 2zm1 3a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
-                </svg>
-            </a>
-        </div>
-         
-        </div>
-      
-      </div>
     </section>
+    
     
      <!-- Projects Section -->
         <section class="container mx-auto mt-8 p-8 bg-white rounded shadow" id="projects">
@@ -113,7 +112,7 @@
                 <p class="text-xl font-bold mb-5 text-black">Here are some of my recent projects that i have been working on:</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Project Card 1 -->
-        <a href="Oraimo/index.html" class="block group project-card relative overflow-hidden">
+        <a href="Oraimo/index.html" class="block group project-card relative overflow-hidden" target="_blank">
         <div class="relative">
                 <video src="./oraimo.mp4" autoplay muted height="600px" width="600px"></video>
                 <div class="absolute inset-0 bg-black opacity-0 transition duration-300 project-overlay"></div>
@@ -122,10 +121,10 @@
                 </div>
         </div>
             <p class="text-black font-semibold mt-2 mb-4">A Project that I collaborated with the Oraimo Company</p>
-            <button class="bg-blue-500 text-black px-4 py-2  hover:bg-blue-600 transition duration-300">View Project</button>
+            <button class="bg-blue-500 text-black px-4 py-2  hover:bg-blue-600 transition duration-300 ">View Project</button>
         </a>
         <!-- Project Card 2 -->
-        <a href="Car-Automation/groupproject/public/index.html" class="block group project-card relative overflow-hidden">
+        <a href="Car-Automation/groupproject/public/index.html" class="block group project-card relative overflow-hidden" target="_blank">
             <div class="relative">
                 <video src="./car.mp4" autoplay muted height="400px" width="600px"></video>
                 <div class="absolute inset-0 bg-black opacity-0 transition duration-300 project-overlay"></div>
@@ -137,7 +136,7 @@
             <button class="bg-blue-500 text-black px-4 py-2  hover:bg-blue-600 transition duration-300">View Project</button>
         </a>
         <!-- Project Card 3 -->
-        <a href="./bakeryproject/public/index.html" class="block group project-card relative overflow-hidden">
+        <a href="./bakeryproject/public/index.html" class="block group project-card relative overflow-hidden" target="_blank">
             <div class="relative">
                 <video src="./bakery.mp4" autoplay muted height="600px" width="600px"></video>
                 <div class="absolute inset-0 bg-black opacity-0 transition duration-300 project-overlay"></div>
@@ -149,7 +148,7 @@
             <button class="bg-blue-500 text-black px-4 py-2  hover:bg-blue-600 transition duration-300">View Project</button>
         </a>
         <!-- Project Card 4 -->
-        <a href="" class="block group project-card relative overflow-hidden">
+        <a href="" class="block group project-card relative overflow-hidden" target="_blank">
             <div class="relative">
                 <video src="./blog.mp4" autoplay muted height="600px" width="600px"></video>
                 <div class="absolute inset-0 bg-black opacity-0 transition duration-300 project-overlay"></div>
@@ -162,7 +161,7 @@
         </a>
 
         <!-- Project Card 5 -->
-        <a href="calculator/public/index.html" class="block group project-card relative overflow-hidden">
+        <a href="calculator/public/index.html" class="block group project-card relative overflow-hidden" target="_blank">
             <div class="relative">
                 <video src="./calculator.mp4" autoplay muted height="400px" width="600px"></video>
                 <div class="absolute inset-0 bg-black opacity-0 transition duration-300 project-overlay"></div>
@@ -184,8 +183,8 @@
     <section class="container mx-auto mt-8 p-8 bg-white rounded shadow" id="services">
         <h2 class="text-4xl font-bold mb-4 text-center">My Services</h2>
         <div id="serviceContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Service Cards will be added here -->
-            <div class="bg-gray-200 p-4 rounded shadow">
+        <!-- Service Cards will be added here -->
+        <div class="bg-gray-200 p-4 rounded shadow">
         <h3 class="text-lg font-semibold">Web Development</h3>
         <img src="./automation.jpg" alt="Web Development" class="w-full h-auto rounded-lg mb-4">
         <p>Custom web application development tailored to your business needs.</p>
@@ -247,12 +246,12 @@
     </div>
     </div>
         <div id="showMoreButtonContainer" class="text-center">
-            <button id="showMoreButton" onclick="showMoreServices()" class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md shadow-md focus:outline-none">Show more</button>
+            <button id="showMoreButton" onclick="showMoreServices()" class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md shadow-md focus:outline-none">Show less</button>
         </div>
     </section>
     
 
-    <!-- Tech StackSection -->
+    <!-- Tech Stack Section -->
     <section class="max-w-7xl mx-auto px-5 my-12  bg-white rounded shadow" id="Tech">
     <div class="text-center">
     <h2 class="text-2xl font-bold mb-4 text-center">Tech Stack</h2>
@@ -308,7 +307,7 @@
     <section id="contact" class="container mx-auto mt-8 p-8 bg-white">
             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 class="mb-4 text-2xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Me</h2>
-                <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+                <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a better feature? Need details about our Business plan? Let us know.</p>
                 <form action="#" class="space-y-8">
                     <div>
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>

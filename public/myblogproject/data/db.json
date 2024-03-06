@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "title": "A question about RESTful APIs",
+      "author": "J.K. Rowling",
+      "body": "REST (Representational State Transfer is an architectural style for building web services that allows for the creation, retrieval, updating, and deletion of resources over the HTTP protocol. A RESTful API is a web service that adheres to the principles of REST.",
+      "id": "4"
+    },
+    {
+      "title": "Using Markdown for writing blog posts",
+      "author": "A.H. Mohamed",
+      "body": "Markdown is easy Markdown is a lightweight markup language that is commonly used for writing blog posts, documentation, and other types of text-based content. It is designed to be easy to read and write, with a simple syntax that allows you to format text without the need for complex HTML tagsto use and produces clean HTML output.",
+      "id": "5"
+    },
+    {
+      "id": "96b6",
+      "title": "sdfghjk",
+      "author": "dfghjk",
+      "body": "dtsfdvbkyuj,gvktyghbdfvngb,"
+    },
+    {
+      "id": "8f2c",
+      "title": "The Killer",
+      "author": "Abdinasir Abdi",
+      "body": "Solitary, cold, methodical and unencumbered by scruples or regrets, a killer waits in the shadows, watching for his next target. Yet, the longer he waits, the more he thinks he's losing his mind, if not his cool."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+
+.calculator {
+    max-width: 300px;
+    margin: auto;
+}
+
+.calc-btn {
+    padding: 10px;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calc-btn:hover {
+    background-color: #e0e0e0;
+}
+

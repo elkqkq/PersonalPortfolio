@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calculator</title>
+</head>
+<body class="bg-gray-100 h-screen flex justify-center items-center">
+
+    <div class="calculator bg-black p-8 rounded-md shadow-md">
+        <input type="text" id="display" class="mb-4 p-2 w-full border rounded-md text-right" readonly>
+
+
+        <div class="grid grid-cols-4 gap-2">
+            <button onclick="clearDisplay()" class="calc-btn bg-gray-300 text-black rounded-full">AC</button>
+            <button onclick="appendOperator('*')" class="calc-btn bg-gray-300 text-black rounded-full">*</button>
+            <button onclick="appendPercentage()" class="calc-btn bg-gray-300 text-black rounded-full">%</button>
+            <button onclick="appendOperator('/')" class="calc-btn bg-gray-300 text-black rounded-full">/</button>
+
+
+
+            <button onclick="appendNumber('1')" class="calc-btn rounded-full">1</button>
+            <button onclick="appendNumber('2')" class="calc-btn rounded-full">2</button>
+            <button onclick="appendNumber('3')" class="calc-btn rounded-full">3</button>
+            <button onclick="appendOperator('+')" class="calc-btn bg-yellow-500 text-white rounded-full">+</button>
+          
+            <button onclick="appendNumber('4')" class="calc-btn rounded-full">4</button>
+            <button onclick="appendNumber('5')" class="calc-btn rounded-full">5</button>
+            <button onclick="appendNumber('6')" class="calc-btn rounded-full">6</button>
+            <button onclick="appendOperator('-')" class="calc-btn bg-yellow-500 text-white rounded-full">-</button>
+            
+
+
+            <button onclick="appendNumber('7')" class="calc-btn rounded-full">7</button>
+            <button onclick="appendNumber('8')" class="calc-btn rounded-full">8</button>
+            <button onclick="appendNumber('9')" class="calc-btn rounded-full">9</button>
+
+            <button onclick="appendDecimal()" class="calc-btn  bg-yellow-500 text-white rounded-full">.</button>
+            
+
+          
+
+            <button onclick="appendNumber('0')" class="calc-btn col-span-3 rounded-full">0</button>
+            <button onclick="calculate()" class="calc-btn bg-yellow-500 text-white col-span-1 rounded-full">=</button>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
